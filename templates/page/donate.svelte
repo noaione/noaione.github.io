@@ -16,4 +16,5 @@
     <p>You can donate to me via one of this link:</p>
     <h5><Link to="https://trakteer.id/noaione/tip" extraClass="bolder">Trakteer</Link> (Indonesian only)</h5>
     <h5><Link to="https://ko-fi.com/noaione" extraClass="bolder">Ko-fi</Link> (Anywhere else)</h5>
+    <h5><Link to="https://github.com/sponsors/noaione" extraClass="bolder">GitHub Sponsor</Link></h5>
 </div>
