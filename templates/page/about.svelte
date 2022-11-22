@@ -7,6 +7,7 @@
     import GitHubIcon from "../components/Icons/GitHub.svelte";
     import TwitterIcon from "../components/Icons/Twitter.svelte";
     import LinkedInIcon from "../components/Icons/LinkedIn.svelte";
+    import MastodonIcon from "../components/Icons/Mastodon.svelte";
 </script>
 
 <div id="donate-set" class="col-sm-6" in:fade>
@@ -24,6 +25,9 @@
         </a>
         <a href="https://github.com/noaione" class="link-icon mr-2" title="GitHub" target="_blank" rel="noreferrer noopener">
             <GitHubIcon />
+        </a>
+        <a href="https://mstdn.id/@noaione" class="link-icon mr-2" title="Mastodon" target="_blank" rel="me noreferrer noopener">
+            <MastodonIcon />
         </a>
     </div>
 </div>

@@ -17,4 +17,5 @@
         <Link to="about">about</Link>
     </h4>
     <!--sse--><h6>Contact: <Link to="mailto:hi@n4o.xyz">hi@n4o.xyz</Link></h6><!--/sse-->
+    <h6>Mastodon: <a href="https://mstdn.id/@noaione" class="linkify" title="Mastodon" rel="me">@noaione@mstdn.id</a></h6>
 </div>
