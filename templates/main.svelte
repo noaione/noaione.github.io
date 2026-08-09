@@ -9,11 +9,10 @@
     // Pages
     import HomePage from "./page/home.svelte";
     import KeysPage from "./page/keys.svelte";
-    import ResumePage from "./page/resume.svelte";
     import DonatePage from "./page/donate.svelte";
     import AboutPage from "./page/about.svelte";
 
-    let VALID_PAGE = ["resume", "keys", "donate", "about"];
+    let VALID_PAGE = ["keys", "donate", "about"];
 
     let loaded = false;
     let showed = "main";
@@ -23,12 +22,6 @@
             return;
         }
         showed = target;
-        if (showed === "resume") {
-            extrasClass = "m-2";
-            window.scrollTo({top: 0, behavior: "smooth"});
-        } else {
-            extrasClass = "";
-        }
         // if (showed !== "main") {
         //     // history.pushState(null, null, `/#/${showed}`);
         // } else {
@@ -41,9 +34,6 @@
         switch (hash) {
             case "#/":
                 toggle("main");
-                break;
-            case "#/resume":
-                toggle("resume");
                 break;
             case "#/keys":
                 toggle("keys");
@@ -80,9 +70,6 @@
         {/if}
         {#if showed === "keys"}
             <KeysPage keys={keys} />
-        {/if}
-        {#if showed === "resume"}
-            <ResumePage />
         {/if}
         {#if showed === "donate"}
             <DonatePage />
