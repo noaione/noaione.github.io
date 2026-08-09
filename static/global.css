@@ -1,0 +1,211 @@
+*,
+::after,
+::before {
+    box-sizing: border-box
+}
+
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
+}
+
+:root {
+    scroll-behavior: smooth
+}
+
+@font-face {
+    font-family: "Cascadia Code";
+    font-style: normal;
+    font-weight: 400;
+    src: url(/assets/fonts/CascadiaCode.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Cascadia Code";
+    font-style: italic;
+    font-weight: 400;
+    src: url(/assets/fonts/CascadiaCodeItalic.woff2) format("woff2");
+}
+
+body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent
+}
+
+.text-white {
+    color: #fff !important
+}
+
+.d-flex {
+    display: flex !important
+}
+
+.min-vh-100 {
+    min-height: 100vh !important
+}
+
+.flex-column {
+    flex-direction: column !important
+}
+
+.justify-content-center {
+    justify-content: center !important
+}
+
+.align-items-center {
+    align-items: center !important
+}
+
+.col-sm-6 {
+    flex: 0 0 auto;
+    width: 80%;
+}
+
+@media (min-width: 768px) {
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 50% !important;
+    }
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2
+}
+
+.h2,
+h2 {
+    font-size: calc(1.325rem + .9vw)
+}
+
+a {
+    color: #0d6efd;
+    text-decoration: underline
+}
+
+.h3,
+h3 {
+    font-size: calc(1.3rem + .6vw)
+}
+
+hr {
+    margin: 1rem 0;
+    color: inherit;
+    background-color: currentColor;
+    border: 0;
+    opacity: .25
+}
+
+hr:not([size]) {
+    height: 1px
+}
+
+.h4,
+h4 {
+    font-size: calc(1.275rem + .3vw)
+}
+
+h5, .h5 {
+    font-size: 1.25rem;
+}
+
+h6, .h6 {
+      font-size: 1rem;
+}
+
+[hidden] {
+    display: none !important
+}
+
+/* Link styling */
+
+.bolder {
+    font-weight: 700;
+}
+
+.linkify {
+    color: #d6d6d6;
+    text-decoration: none;
+    background-image: linear-gradient(#5a8dd9, #5a9ed9);
+    background-size: 0% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.linkify:hover,
+.linkify:focus,
+.linkify:active {
+    color: #d6d6d6;
+    background-size: 100% 0.1em;
+}
+
+.linkify-2 {
+    color: #d6d6d6;
+    text-decoration: none;
+    background-image: linear-gradient(rgb(212, 171, 54), rgb(226, 54, 24));
+    background-size: 0% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.linkify-2:hover,
+.linkify-2:focus,
+.linkify-2:active {
+    color: #d6d6d6;
+    background-size: 100% 0.1em;
+}
+
+.icon-strata {
+    fill: currentColor;
+    width: 2rem;
+    height: 2rem;
+    display: block;
+}
